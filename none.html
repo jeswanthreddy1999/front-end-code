@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<style>
+			#totalbox{ width:400px;height:400px; position:absolute; left:480px;top:120px; perspective:800px;}
+.ribs{width:400px;}
+  .ribs img{width:400px; height:400px;}
+  .ribs div{position:absolute;width:400px;height:400px;}
+ .face_front{transform:translateZ(200px);}
+ .face_back{transform:rotateY(180deg) translateZ(200px);}
+ .face_left{transform:rotateY(-90deg) translateX(-200px); transform-origin:left;}
+  .face_right{transform:rotateY(90deg) translateX(200px); transform-origin:right;}
+  .face_top{transform:rotateX(-90deg) translateY(-200px); transform-origin:top;}
+  .face_bottom{transform:rotateX(90deg) translateY(200px); transform-origin:bottom;}
+
+		</style>
+	</head>
+	<body>
+		<div id="totalbox">
+		<div class="ribs">
+			<div class="face_front quio" ><img src="gym1.jpg" /></div>
+			<div class="face_back quio"><img src="gym2.jpg" /></div>
+			<div class="face_top quio"><img src="gym3.jpg" /></div>
+			<div class="face_bottom quio"><img src="gym4.jpg" /></div>
+			<div class="face_right quio"><img src="gym5.jpg" /></div>
+			<div class="face_left quio"><img src="gym6.jpg" /></div>
+		</div>
+	</div>
+	</body>
+</html>

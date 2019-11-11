@@ -1,0 +1,42 @@
+body{height:1000px; margin:0px; padding:0px; width:1360px; }
+#anchor_tag_for_repeat{dispaly:block;}
+.modify_a{ text-decoration:none; font-size:30px; color:#ff0000; 
+ font-family:ariel; font-style:italic;text-shadow:0 2px 2px red}
+ #repeat_li{ margin-top:0px; list-style-type:none; position:relative;left:-40px;
+ 	background-color:rgba(0,0,255,1); border-radius:10%; margin-top:2px;}
+ #ul_repeat{
+ 	margin-top:0px; transition:0.6s ease;
+ }
+ #body_id{ background-image:url('shopping1.jpg'); background-repeat:no-repeat; background-size:100% 100%;
+ z-index:3; width:100%; height:720px;}
+#input_div{position:absolute; left:400px;}
+input{width:500px; height:50px; font-size:40px;}
+ul li{width:500px;}
+.img_for_web{ width:50px;height:50px; border-radius:20%; margin:0px; z-index:1; box-shadow: 2px 2px black}
+#things_div_web{position:fixed; top:300px;}
+.bar1,.bar2,.bar3{width: 35px;height: 5px;background-color: #333;margin: 6px 0;transition: 0.6s;}
+.change .bar1 {transform: rotate(-45deg) translate(-9px, 6px);}
+.change .bar2 {opacity: 0;}
+.change .bar3 {transform: rotate(45deg) translate(-8px, -8px);}
+.container{cursor:pointer; z-index:15; margin-top:0px;}
+.a_href{text-decoration:none; font-size:30px; color:red; padding:40px; background:;}
+.no_way ul li{ list-style-type:none;position:relative;left:-60px;padding:5px;
+	background-image:url('texture.jpg'); background-repeat:no-repeat; background-attachment:cover;
+	 width:250px; border-top-left-radius:30%;  }
+.no_way{top:px; position:relative;transition:0.7s ease;}
+.addclss{right:300px;}
+table, tr,td{border:4px dashed red; filter:brightness(20%;); z-index:0;}
+.calculate_price{position:absolute; top:40%; left:24%; background-image:url('shopping_cart.jpg') }
+.input_cart{width:300px; height:40px; font-size:25px;}
+.label_cart{font-size:40px;color:#123000;}
+#sumbit_data{width:300px; margin-left:160px; color:blue; border-top-right-radius:20%;
+border-bottom-left-radius:20%;}
+#car1{width:150px; height:100px; position:absolute;}
+.div_last{background-color:#6a737c; width:100%; height:400px;
+ top:675px; position:relative; color:white; font-size:25px;}
+ .one_only tr, p{padding-bottom: 40px; margin-left:100px;} 
+ .y{position:relative; color:white; top:-370px; left:550px;}
+ .yoo{position:absolute; color:white; top:-0px; left:1000px; margin-right:0px;}
+ p:hover{
+ 	color:blue; cursor:pointer;
+ }

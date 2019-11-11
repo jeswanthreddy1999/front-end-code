@@ -1,0 +1,139 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="angular_things.js"></script>
+		<meta name="viewport" , content="width=device-width", initial-scale="1.0"/>
+		<meta name="author" content="Jeswanth" />
+		<meta name="keywords" content="Gym,Workout,pain,strength" />
+		<meta name="description" content="Jeswanth's Gym" />
+		<meta charset="UTF-8"/>
+		 <link rel="stylesheet" type="text/css" href="shopping.css">
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body  ng-app="application">
+		<div id="body_id" ng-controller="section1">
+			<div id="input_div">
+				<!--Things of Input-->
+			<input  ng-focus="input_func()" ng-blur="input_func2()" type="text" ng-model="input_for_search"  />			
+        <ul id="ul_repeat" ng-show="focus_on_input" >
+			<li id="repeat_li" ng-click="text_copy()" ng-repeat="ref in anchor_repeat | filter:input_for_search"><a class="modify_a" id="anchor_tag_for_repeat"  href="#" >{{ref}}</a></li>
+		</ul>
+</div>
+
+<!--Payment -->
+	<div class="container" ng-click="myFunc()">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+<div class="no_way" ng-show="showo">
+	<ul class="ul_lithings" >
+	<li onmouseover="mouse_side() "><a href="#" class="a_href">Main Theme</a></li>
+	<li onmouseover="mouse_side()"><a href="#" class="a_href">Payment</a></li>
+	<li onmouseover="mouse_side()"><a href="#" class="a_href">Quote</a></li>
+</ul>
+</div>
+<!--Facebook,TWitter,Insta Follow -->
+
+<div style="display:inline-block;" id="things_div_web">
+	<a href="#" ><img src="facebook.png" alt="facebook" class="img_for_web" /></a>
+	<a href="#" ><img src="instagram.png" alt="instagram" class="img_for_web" /></a>
+	<a href="#" ><img src="twitter.jpg" alt="twitter" class="img_for_web" /></a>        
+</div>
+
+<div style="position:fixed">
+<div id="div_target1" style="position:relative; display:inline-block;left:1250px; top:250px"> <a><img
+id="img123" 
+ src="feedback.png" style="width:100px;height:100px" /></a>
+	<a><input style="width:200px; height:100px;" type="textarea" rows="10" cols="10" /></a>
+</div>
+</div>
+
+<!--For Calculating of Price-->
+
+<form >
+		<table class="calculate_price">
+			<tr>
+		<td><label class="label_cart" >Item Name</label></td>
+		<td><input ng-blur="blur_func()" type="text" id="item_name"
+			ng-model="text_mania"
+		 class="input_cart"  required /></td></tr>
+		<tr>
+		<td><label class="label_cart">No.of Items</label></td>
+		<td><input type="number" min=1 max=10 value=1  
+			class="input_cart" ng-model="omahanum" ng-keyup="numberitems()"   required   /></td></tr>
+		<tr>
+		<td><label class="label_cart">Cost Price</label></td>
+		<td><input type="number" class="input_cart"  ng-model="carom"    required   /></td></tr>
+		<tr>
+
+			<td><label class="label_cart">Total Cost</label></td>
+		<td><input type="number"   
+			class="input_cart" ng-model="opium"    required   /></td></tr>
+
+			<td><input  type="checkbox" class="input_cart"   required  /></td>
+		<td><label class="label_cart">Terms&Conditions</label></td></tr>
+		<tr style="width:100%;">
+		<td colspan="2">
+
+			<div id="div44" onclick="setTimeout(f4,1500)" style="width:700px; 
+			position:relative;   height:50px; background:grey";>
+
+			<div id="div33" onclick="setTimeout(f3,1000)" style="width:500px; 
+			position:relative; left:100;  height:50px; background:red;">
+				<div onclick="setTimeout(f2,500)" id="div22"  style="width:400px; position:relative;
+				 left:50px; height:50px; background:green;">
+
+				<div onclick="setTimeout(f1,0)" id="div11">
+
+					<input style="margin-left:50px" type="submit" id="sumbit_data" value="Safe Pay" />
+
+				</div>
+			</div>
+			</div>
+</div>
+			</td>
+		</tr>
+	</table>
+	</form>
+
+
+	<!--Car Animation-->
+
+	<div><img id="car1" src="car.jpg" /></div> 
+
+	<!-- Contact page-->
+<div>
+	<div class="div_last" style="display:inline-block">
+		
+			<div class="one_only">
+			<p href="#">Facebook</p>
+			<p href="#">Twitter</p>
+			<p href="#">Instagram</p>
+			<p href="#">SQL Certificate</p>
+			</div>
+
+			<div class="y">
+			<p href="#">CSS Certificate</p>
+			<p href="#">Web Certificates</p>
+			<p href="#">PHP Examples</p>
+			<p href="#">jQuery Certificate</p>
+
+			</div>
+
+			<div class="yoo">
+			<p href="#">Java Examples</p>
+			<p href="#">HTML Colors</p>
+			<p href="#">Java Reference</p>
+			<p style="margin:0px;" href="#">Angular </p>
+			</div>
+
+		</div>
+
+
+		</div>
+
+	</body>
+</html>

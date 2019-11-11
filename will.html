@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<style>
+			table,tr,td,th{border:2px solid red; border-collapse:collapse; text-align:center;}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script>
+			angular.module("app",[])
+			.controller("control1",function($scope){
+				$scope.main=0;
+				$scope.mai=0;
+				$scope.ma=0;
+				$scope.m=0;
+				$scope.op=function(){
+					$scope.main++;
+				}
+				$scope.opa=function(){
+					$scope.mai++;
+				}
+				$scope.opaa=function(){
+					$scope.ma++;
+				}
+				$scope.opaaa=function(){
+					$scope.m++;
+				}
+
+
+
+				$scope.ops=function(){
+					$scope.main--;
+				}
+				$scope.opsa=function(){
+					$scope.mai--;
+				}
+				$scope.opsaa=function(){
+					$scope.ma--;
+				}
+				$scope.opsaaa=function(){
+					$scope.m--;
+				}
+			});
+		</script>
+	</head>
+	<body ng-app="app">
+		<div ng-controller="control1">
+			<table>
+				<tr>
+					<th >fruits</th>
+					<th>No of Items</th>
+					<th>Add</th>
+					<th>REmove</th>
+				</tr>
+				<tr>
+					<td>Apples</td>
+					<td>{{main}}</td>
+					<td><button ng-click="op()">Add</button></td>
+					<td><button ng-click="ops()">Remove</button></td>
+				</tr>
+				<tr><td>Mangoes</td>
+					<td>{{mai}}</td>
+					<td><button ng-click="opa()">Add</button></td>
+					<td><button ng-click="opsa()">Remove</button></td>
+
+
+				</tr>
+				<tr><td>Grapes</td>
+					<td>{{ma}}</td>
+					<td><button ng-click="opaa()">Add</button></td>
+					<td><button ng-click="opsaa()">Remove</button></td>
+
+				</tr>
+				<tr><td>Oranges</td>
+					<td>{{m}}</td>
+					<td><button ng-click="opaaa()">Add</button></td>
+					<td><button ng-click="opsaaa()">Remove</button></td>
+
+				</tr>
+
+			</table>
+		</div>
+	</body>
+</html>

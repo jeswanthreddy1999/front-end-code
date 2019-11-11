@@ -1,0 +1,93 @@
+<html>
+	<head>
+	<link href="form.css" rel="stylesheet"/> 
+		<title>My form</title>
+	</head>
+	<body>
+	<img src="frameimg.png" alt="beaytiful frame"/>
+		<div class="form">
+		<form name="registration" action="shopping.html" method="post" enctype="multipart/form-data" onsubmit="return aa()"><!--by default method="get"-->
+			<!--<fieldset>-->
+				<legend align="center">Register Form</legend>
+					<table align="center" cellspacing="20px" >
+						<tr>
+							<td width="50%"><label>Name:</label></td>
+							<td width="50%"><input type="name" name="name" size="30" onkeyup="aa()" id="td1"   required /></td>
+						
+						</tr>
+						<tr>
+							<td width="50%"><label>Password:</label></td>
+							<td width="50%"><input type="password" name="password" size="30"  maxlength="10" id="ss" placeholder="secret code" required /></td>
+						</tr>
+						<tr>
+							<td width="50%"><label>Age:</label></td>
+							<td width="50%"><input type="text" name="age"  id="wwe" onkeyup="dope()" maxlength="3" size="3" /></td><td><label id="poj">** Invalid</label></td>
+						</tr>
+			            <tr>
+							<td width="50%"><label>Gender:</label></td>
+							<td>
+						    <label>Male</label>
+							<input type="radio" name="gender" value="male"/>
+							<label>Female</label>
+							<input type="radio" name="gender" value="female"/>
+							</td>
+						</tr>
+						<tr>
+							<td width="50%"><label>Email:</label></td>
+							<td width="50%"><input type="email" name="email" size="30"  id="otp" maxlength="50" onkeyup="emaill()" /></td>
+						</tr>
+						<tr>
+							<td width="50%"><label>URL drop:</label></td>
+							<td width="50%"><input type="url" name="url" size="30" placeholder="http://www.jesh.com" maxlength="30" /></td>
+						</tr>
+						<tr>
+							<td width="50%"><label>Qualifications:</label></td>
+							<td width="50%">
+							<select multiple="multiple" size="">
+							<option>Trainer</option>
+							<option>Motivator</option>
+							<option>Physical education</option>
+							<option>Supervisor</option>
+							<option>wardener</option>
+							</select>
+							</td>
+						</tr>
+						<tr>
+							<td width="50%"><label>Jobs Available:</label></td>
+							<td width="50%">
+							<select>
+							<option>Office Boy</option>
+							<option>Equpment Sales Man</option>
+							<option>Distributer</option>
+							<option>Trainer</option>
+							<option>Boxing Trainer</option>
+							</select>
+							</td>
+						</tr>
+						<tr>
+							<td width="50%"><label>Drop a File:</label></td>
+							<td width="50%"><input type="file" name="file" value=".png" size="30"  required /></td>
+						</tr>
+						<tr>
+						<td width="50%"><label>Feedback Box:</label></td>
+						<td width="50%"><textarea rows="5" cols="40">
+						
+						</textarea></td>
+						</tr>
+						<tr>
+							<td width="50%" align="right"><input type="checkbox" name="check"  size="15" required /></td>
+							<td width="50%">I agree all terms and conditions</td>
+						</tr>
+						<tr>
+						<td width="50%"><input type="submit" name="submit" /></td>
+						<td width="50%"><input type="Reset" name="submit" /></td>
+						<td class="no"><input type="image" src="abcd.png" name="img" style="width:50px; height:50px"/></td>
+						</tr>
+		</div>
+					</table>
+			<!--</fieldset>-->
+		</form>
+		<div>
+		<script src="validationform.js"></script>
+	</body>
+</html>
